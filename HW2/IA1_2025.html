@@ -7541,7 +7541,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Install required packages for PDF export (used at the end of the notebook)</span>
@@ -7599,7 +7599,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># from google.colab import drive</span>
@@ -7626,12 +7626,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">train_path</span><span class="p">)</span>
@@ -7639,183 +7639,6 @@ a.anchor-link {
 
 <span class="n">train_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>id</th>
-<th>date</th>
-<th>bedrooms</th>
-<th>bathrooms</th>
-<th>sqft_living</th>
-<th>sqft_lot</th>
-<th>floors</th>
-<th>waterfront</th>
-<th>view</th>
-<th>condition</th>
-<th>...</th>
-<th>sqft_above</th>
-<th>sqft_basement</th>
-<th>yr_built</th>
-<th>yr_renovated</th>
-<th>zipcode</th>
-<th>lat</th>
-<th>long</th>
-<th>sqft_living15</th>
-<th>sqft_lot15</th>
-<th>price</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>7972604355</td>
-<td>5/21/2014</td>
-<td>3</td>
-<td>1.00</td>
-<td>1020</td>
-<td>7874</td>
-<td>1.0</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-<td>...</td>
-<td>1020</td>
-<td>0</td>
-<td>1956</td>
-<td>0</td>
-<td>98106</td>
-<td>47.5175</td>
-<td>-122.346</td>
-<td>1290</td>
-<td>7320</td>
-<td>2.1800</td>
-</tr>
-<tr>
-<th>1</th>
-<td>8731951130</td>
-<td>6/9/2014</td>
-<td>3</td>
-<td>2.25</td>
-<td>2210</td>
-<td>8000</td>
-<td>2.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>...</td>
-<td>2210</td>
-<td>0</td>
-<td>1969</td>
-<td>0</td>
-<td>98023</td>
-<td>47.3085</td>
-<td>-122.381</td>
-<td>1990</td>
-<td>8000</td>
-<td>2.5025</td>
-</tr>
-<tr>
-<th>2</th>
-<td>7885800740</td>
-<td>2/18/2015</td>
-<td>4</td>
-<td>2.50</td>
-<td>2350</td>
-<td>5835</td>
-<td>2.0</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-<td>...</td>
-<td>2350</td>
-<td>0</td>
-<td>2003</td>
-<td>0</td>
-<td>98042</td>
-<td>47.3494</td>
-<td>-122.153</td>
-<td>3010</td>
-<td>5772</td>
-<td>2.7000</td>
-</tr>
-<tr>
-<th>3</th>
-<td>4232900940</td>
-<td>5/22/2014</td>
-<td>3</td>
-<td>1.50</td>
-<td>1660</td>
-<td>4800</td>
-<td>2.0</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-<td>...</td>
-<td>1660</td>
-<td>0</td>
-<td>1907</td>
-<td>0</td>
-<td>98119</td>
-<td>47.6352</td>
-<td>-122.358</td>
-<td>1690</td>
-<td>4000</td>
-<td>9.2630</td>
-</tr>
-<tr>
-<th>4</th>
-<td>3275850190</td>
-<td>9/5/2014</td>
-<td>3</td>
-<td>2.50</td>
-<td>2410</td>
-<td>9916</td>
-<td>2.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>...</td>
-<td>2410</td>
-<td>0</td>
-<td>1989</td>
-<td>0</td>
-<td>98052</td>
-<td>47.6911</td>
-<td>-122.103</td>
-<td>2310</td>
-<td>8212</td>
-<td>7.0000</td>
-</tr>
-</tbody>
-</table>
-<p>5 rows × 21 columns</p>
-</div>
 </div>
 </div>
 </div>
@@ -7862,7 +7685,7 @@ $\sigma$ is the standard deviation of 'x' in the training set</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">preprocess</span><span class="p">(</span><span class="n">train_df</span><span class="p">,</span> <span class="n">val_df</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
@@ -7920,12 +7743,12 @@ $\sigma$ is the standard deviation of 'x' in the training set</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Apply preprocessing</span>
@@ -7941,25 +7764,6 @@ $\sigma$ is the standard deviation of 'x' in the training set</p>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Mean:"</span><span class="p">,</span> <span class="n">X_val</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Std: "</span><span class="p">,</span> <span class="n">X_val</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">())</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Training set (normalized features):
-Mean: [0.0, -0.0, 0.0, -0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, -0.0, 0.0, 0.0, -0.0, -0.0, 0.0, -0.0, -0.0]
-Std:  [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
-
-Validation set (normalized features):
-Mean: [0.01, -0.01, 0.01, 0.01, 0.02, 0.02, 0.0, -0.06, 0.06, 0.03, -0.02, 0.02, 0.01, -0.03, -0.02, 0.02, 0.05, -0.01, -0.02, 0.01, -0.02, -0.02]
-Std:  [0.89, 1.0, 0.99, 0.91, 0.99, 1.09, 1.03, 0.98, 1.03, 1.0, 0.98, 1.0, 1.03, 1.01, 1.0, 0.99, 1.05, 0.79, 1.01, 1.0, 0.98, 1.0]
-</pre>
 </div>
 </div>
 </div>
@@ -8020,7 +7824,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">closed_form_linear_regression</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -8059,12 +7863,12 @@ $$</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your Code goes here</span>
@@ -8087,46 +7891,6 @@ $$</p>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">feature_weight_dict</span><span class="p">:</span>
     <span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">feature_weight_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>MSE_Train: 32.50496896499564
-MSE_Val: 33.80987791731046
-Learned weight vector: [-0.28101388  0.33929257  0.76228256  0.0580919   0.01971891  0.32714501
-  0.44583096  0.19976084  1.11719537  0.75470832  0.15598767 -0.76291067
-  0.05447898 -0.26346066  0.83634846 -0.30344009  0.14389482 -0.09936385
- -0.05049912  0.17241986  0.05545877  0.01715014]
-bedrooms: -0.2810138831445138
-bathrooms: 0.33929257113528366
-sqft_living: 0.7622825637295061
-sqft_lot: 0.058091903257427246
-floors: 0.019718914892374498
-waterfront: 0.32714500752829523
-view: 0.4458309617373124
-condition: 0.199760839115206
-grade: 1.1171953729163289
-sqft_above: 0.7547083184347386
-sqft_basement: 0.1559876698085828
-yr_built: -0.7629106656297113
-yr_renovated: 0.05447898238665705
-zipcode: -0.26346065848694766
-lat: 0.8363484586234184
-long: -0.30344009362493274
-sqft_living15: 0.14389482170249618
-sqft_lot15: -0.0993638505644607
-day: -0.05049911979420482
-year: 0.17241986135809007
-month: 0.05545876839507345
-age_since_renovated: 0.0171501419884324
-</pre>
 </div>
 </div>
 </div>
@@ -8194,7 +7958,7 @@ age_since_renovated: 0.0171501419884324
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">batch_gradient_descent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">epsilon_loss</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">epsilon_grad</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -8271,7 +8035,7 @@ age_since_renovated: 0.0171501419884324
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8324,33 +8088,6 @@ age_since_renovated: 0.0171501419884324
 <span class="k">for</span> <span class="n">lr</span><span class="p">,</span> <span class="n">train_mse</span><span class="p">,</span> <span class="n">val_mse</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">converged_rates</span><span class="p">,</span> <span class="n">train_losses_list</span><span class="p">,</span> <span class="n">val_mse_list</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Learning rate </span><span class="si">{</span><span class="n">lr</span><span class="si">}</span><span class="s2">: Training MSE = </span><span class="si">{</span><span class="n">train_mse</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">, Validation MSE = </span><span class="si">{</span><span class="n">val_mse</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Learning rate: 1
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/home/magraz/venvs/ml-class/lib/python3.10/site-packages/numpy/_core/_methods.py:135: RuntimeWarning: overflow encountered in reduce
-  ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
-/tmp/ipykernel_16833/4213706113.py:27: RuntimeWarning: overflow encountered in square
-  mse_loss = np.mean((y_pred-y)**2)
-/tmp/ipykernel_16833/4213706113.py:24: RuntimeWarning: overflow encountered in matmul
-  y_pred = X @ w
-/tmp/ipykernel_16833/4213706113.py:30: RuntimeWarning: invalid value encountered in matmul
-  gradient_mse = (2/N) * X.T @ (y_pred-y)
-</pre>
 </div>
 </div>
 </div>
@@ -8673,7 +8410,7 @@ Include an additional row to the above table to report for each feature, the var
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">train_df</span><span class="p">,</span> <span class="n">val_df</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">train_df</span><span class="p">,</span> <span class="n">val_df</span><span class="p">)</span>
 
 <span class="c1"># Set random seed for reproducibility</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -8723,7 +8460,26 @@ Include an additional row to the above table to report for each feature, the var
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Learned weights for each model and their variances:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"="</span> <span class="o">*</span> <span class="mi">80</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">results_df</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results_df</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Show features with highest variance (least stable)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Top 5 features with highest weight variance (least stable):"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+<span class="n">variance_sorted</span> <span class="o">=</span> <span class="n">variance_row</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">feature_idx</span> <span class="o">=</span> <span class="n">variance_sorted</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">feature_name</span> <span class="o">=</span> <span class="n">feature_names</span><span class="p">[</span><span class="n">feature_idx</span><span class="p">]</span>
+    <span class="n">variance_val</span> <span class="o">=</span> <span class="n">variance_row</span><span class="p">[</span><span class="n">feature_idx</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">feature_name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">variance_val</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Show features with lowest variance (most stable)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Top 5 features with lowest weight variance (most stable):"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">feature_idx</span> <span class="o">=</span> <span class="n">variance_sorted</span><span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">feature_name</span> <span class="o">=</span> <span class="n">feature_names</span><span class="p">[</span><span class="n">feature_idx</span><span class="p">]</span>
+    <span class="n">variance_val</span> <span class="o">=</span> <span class="n">variance_row</span><span class="p">[</span><span class="n">feature_idx</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">feature_name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">variance_val</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8838,6 +8594,26 @@ Your file should start with a header row (<code>id, price</code>) and followed b
 </ul>
 <p>You will get <strong>3 nonus points</strong> if your team scored top 3 on the private leader board, or entered the largest number of unique submissions (unique sores).</p>
 <p><strong>No late submission.</strong> The competition will be closed at 11:59 pm of the due date. No late submission will be allowed for this portion of the assignment to ensure fairness.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">train_path</span> <span class="o">=</span> <span class="s1">'./PA1_train1.csv'</span>
+<span class="n">val_path</span> <span class="o">=</span> <span class="s1">'./PA1_test1.csv'</span>
+
+<span class="n">train_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">train_path</span><span class="p">)</span>
+<span class="n">val_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">val_path</span><span class="p">)</span>
+
+<span class="n">train_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
